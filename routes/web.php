@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+    Route::get('/', function () {
+        return view('index');
+    })->name('dashboard');    
+
+Route::middleware('guest')->group(function () {
+});
+Route::middleware('auth')->group(function () {
 });
