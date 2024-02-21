@@ -38,3 +38,10 @@ class RouteServiceProvider extends ServiceProvider
         });
     }
 }
+Route::middleware('api')
+    ->prefix('api')
+    ->as('api.')
+    // You should continue with your route definition here, for example:
+    ->group(function () {
+        Route::resource('posts', 'PostController');
+    });

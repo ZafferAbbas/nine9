@@ -159,7 +159,9 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Yajra\DataTables\DataTablesServiceProvider::class,
+        InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
+        InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
         /*
          * Application Service Providers...
          */
